@@ -1,0 +1,38 @@
+<form>
+    <h1>Article Analytics</h1>
+    <p>Enter the name of an article below to view detailed statistics about it</p>
+    <table>
+        <tr>
+            <td>
+                <input type="text" id="articleEntryBox" list="articleEntryList"/>
+                    <datalist id="articleEntryList">
+                    </datalist>
+            </td>
+            <td>
+                <input type="button" value="Find Article" id="articleSearchButton" />
+            </td>
+        </tr>
+    </table>
+    <h3 id="putTitleHere"></h3>
+    <p id="wasIUpdated"></p>
+    <table id="putClassHere">
+        <thead>
+            <tr>
+                <th id="putTopRegUsersHeading">
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul id="putTopRegUsers">
+
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h3 id="putChartTitleHere"></h3>
+    <div id="IndividualArticleChart"></div>
+    <div id="putChartControlsHere"></div>
+</form>

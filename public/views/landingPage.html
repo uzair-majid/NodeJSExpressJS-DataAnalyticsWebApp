@@ -1,0 +1,92 @@
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>Wikilatics</title>
+	<link rel="stylesheet" href="landingstyle.css" />
+    <script type='text/javascript' src='javascripts/login.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- /* Tabbed form style from to http://w3iscool.com/login-sign-up-form-in-tab-style/ */
+ -->
+    <script type="text/javascript">
+
+    	$(document).ready(function(){
+
+			      $('.tab-group a').on('click', function (e) {
+			      e.preventDefault();
+			       
+			      $(this).parent().addClass('active');
+			      $(this).parent().siblings().removeClass('active');
+			       
+			      var href = $(this).attr('href');
+			      $('.forms > form').hide();
+			      $(href).fadeIn(500);
+
+			    });
+			});			
+	</script>
+
+</head>
+
+<body>
+	<h1>Wikilatics</h1>
+	<p>Find Information on the revisions of Wikipedia articles!
+		<br>Information is avaliable for specific articles, authors or Wikipedia as a whole.</p>
+	<img src="images/testimage.png">
+<!-- /* Tabbed form style from to http://w3iscool.com/login-sign-up-form-in-tab-style/ */
+ -->
+	<div class="forms" id="tabs">
+		<ul class = "tab-group">
+				<li class="tab active"><a href=#logins>Log In</a></li>
+				<li class="tab"><a href="#signuptab">Sign Up</a></li>
+	    </ul>
+
+
+    <form method='POST' action='/loggedIn' onsubmit='return loginvalidations()' id="logins">
+
+
+		    <div class="input-field">
+
+		            <label for="email">Email</label>
+		            <input type="email" id="email-l" name="email">
+		              
+		            <label for="password">Password</label> 
+		            <input type="password" id="pw-l" />
+		               
+		            <input type="submit" id="login" value="Log In"  />         
+		    </div>
+
+    </form>
+
+
+
+    <form method='POST'  onsubmit='return signupvalidations()' id="signuptab">
+
+    	<div class="input-field">
+
+ 				<label for="fname">First Name</label> 			
+				<input type="text" id="fname" />
+			
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" />
+		
+				<label for="uname">Username</label>
+				<input type="text" id="username" />
+			
+				<label for="email">Email</label>
+				<input type="email" id="email-r" />
+			
+				<label for="pword">Password</label>
+				<input type="password" id="pw-r" />
+			
+                <label for="confirmpassword">Confirm Password</label>
+                <input type="password" id="cpw" />
+            
+                <input type="submit" id="signup" value="Register"/>
+        </div>      
+    </form>
+
+</div>
+</body>
+
+</html>

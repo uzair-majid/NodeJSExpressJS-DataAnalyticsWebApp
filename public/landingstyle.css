@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding-bottom: 2em;
+    font-family: Avenir;
+    background-color: #F3F3F3;
+}
+
+h1 {
+    color: #2F576E;
+    text-align: center;
+    padding-top: 0.5em;
+    font-size: 4em;
+}
+
+h2 {
+    color: #CE953F;
+    font-weight: 800;
+    font-size: 1.6em;
+    text-align: center;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+}
+
+p {
+    text-align: center;
+    color: #424242;
+}
+
+img {
+    height: 30em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+}
+
+
+/* Tabbed form CSS styles from to http://w3iscool.com/login-sign-up-form-in-tab-style/ */
+
+.forms {
+    background: #fff;
+    box-shadow: 0 0 0.188em #000;
+    margin: 1.875em auto;
+    max-width: 31.250em;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+}
+.forms h1 {
+    padding: 0 0 1.250em 0;
+    font-size: 1.625em;
+    color: #666;
+    font-weight: lighter;
+    text-align: center;
+}
+.forms form { padding: 1.875em; }
+
+#signuptab { display: none;
+ }
+
+
+.forms .tab-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+
+.forms .tab-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.forms .tab-group li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.938em;
+    background: #e5e6e7;
+    color: #888;
+    font-size: 1.250em;
+    text-align: center;
+    border-top: 0.188em solid transparent;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.forms .tab-group li a:hover {
+    background: #dedfdf;
+    color: #666;
+}
+.forms .tab-group .active a {
+    background: #fff;
+    color: #444;
+    border-top: 0.188em solid #CE953F; /*orange color*/
+}
+.forms input {
+    font-size: 1.000em;
+    display: block;
+    width: 100%;
+    padding: 0.625em 1.250em;
+    border: 0.063em solid #ddd;
+    color: #666;
+    border-radius: 0;
+    margin-bottom: 0.625em;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.forms input:focus {
+    outline: 0;
+    border-color: #2e5ed7;
+}
+.forms label {
+    font-size: 1em;
+    font-weight: normal;
+    color: #2F576E;
+    margin-bottom: 0.313em;
+    display: block;
+}
+#login, #signup {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 0.625em 0;
+    font-size: 1.125em;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.125em;
+    background: #CE953F;
+    color: #ffffff;
+    cursor: pointer;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+

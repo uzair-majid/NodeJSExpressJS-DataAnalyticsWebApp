@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="chart.js"></script>
+
+</head>
+
+<body>
+
+    <ul>
+        <li>
+            <h2>
+                Wikilatics
+            </h2>
+        </li>
+        <li>
+            <a class="active" href="#home">Overview</a>
+        </li>
+        <li>
+            <a href="#news">Article Analytics</a>
+        </li>
+        <li>
+            <a href="#contact">Author Analytics</a>
+        </li>
+    </ul>
+
+    <div id="main">
+        <h1>Overview
+        </h1>
+        <div id="chart">
+        </div>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        The number of revisions from different user types  
+                    </td>
+                    <td>
+                        <input type="radio" name="chart" value="in total" checked>in total
+                        <br>
+                    </td>
+                    <td>
+                        <input type="radio" name="chart" value="over time">over time
+                        <br>
+                    </td>
+                    <td>
+                        <input type="submit" value="update">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <table class="longtable">
+            <thead>
+                <tr>
+                    <th>
+                        Top Articles
+                    </th>
+                    <th>
+                        Bottom Articles
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        1. Article Name
+                    </td>
+                    <td>
+                        1. Article Name
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        2. Article Name
+                    </td>
+                    <td>
+                        2. Article Name
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        3. Article Name
+                    </td>
+                    <td>
+                        3. Article Name
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        Showing
+                    </td>
+                    <td>
+                        <input type="number" name="quantity" min="1" max="100" value = "3">
+                    </td>
+                    <td>
+                        articles sorted by
+                    </td>
+                    <td>
+                        <select>
+                            <option>
+                                Example
+                            </option>
+                            <option>
+                                Example
+                            </option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="submit" value="update">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>

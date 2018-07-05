@@ -1,0 +1,22 @@
+/******** Mongo Shell script which converts all timestamps from String format to 
+		Date format for ease of calculations ********/
+
+var bulk = db.revisions.initializeUnorderedBulkOp(),
+    count = 0;
+var x = db.revisions.find().count();
+var y = x+1000;
+
+db.revisions.find().forEach(function(doc) {
+    bulk.find({ "_id": doc._id }).updateOne({
+        "$set": { "timestamp": ISODate(doc.timestamp) }
+    })
+    count++;
+    if (count % y == 0) {
+
+        bulk.execute();
+        bulk = db.revisions.initializeUnorderedBulkOp();
+    }
+})
+
+/*** To check if any timestamps are still in string format ***/
+db.revisions.find( { timestamp: { $type: "string" } } );

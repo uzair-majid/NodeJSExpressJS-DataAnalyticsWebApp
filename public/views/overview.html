@@ -1,0 +1,91 @@
+<form>
+    <h1>Overview</h1>
+    <h3>Most and Least Revised Articles</h3>
+    <table class="longtable">
+        <thead>
+            <tr>
+                <th>Most Revisions</th>
+                <th>Least Revisions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul id="topRev"></ul>
+                </td>
+                <td>
+                    <ul id="botRev"></ul>
+                </td>
+            </tr>
+        </tbody>
+
+        <table>
+            <tr>
+                <td>Show</td>
+                <td>
+                    <input type="number" id="quantityInputBox" name="quantity" min="1" max="100" value = '3'/>
+                </td>
+                <td>articles </td>
+                <td>
+                    <input type="button" name="topBotRevUpdate" value="Update" id="updateButton" />
+                </td>
+            </tr>
+        </table>
+
+    </table>
+    <h3>Article Histories</h3>
+    <table class="longtable">
+        <thead>
+            <tr>
+                <th>Longest History</th>
+                <th>Shortest History</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul id="oldestArticles"></ul>
+                </td>
+                <td>
+                    <ul id="newestArticles"></ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Articles Editted By Registered Users</h3>
+    <table class="longtable">
+        <thead>
+            <tr>
+                <th>Most Users</th>
+                <th>Least Users</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul id="mostUsers"></ul>
+                </td>
+                <td>
+                    <ul id="leastUsers"></ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Graphs</h3>
+    <p>Proportion of revisions made by different user types</p>
+    <div id="myChart"></div>
+    <table>
+        <tr>
+            <td>The number of revisions from different user types</td>
+            <td>
+                <select name="chartSelector" id="chartSelector">
+                    <option value="Over Time">Over Time</option>
+                    <option value="In Total">In Total</option>
+                </select>
+            </td>
+            <td>
+                <input type="button" name="chartUpdate" value="Update" id="updateButton" />
+            </td>
+        </tr>
+    </table>
+</form>

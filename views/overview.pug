@@ -1,0 +1,75 @@
+extends main
+
+block content
+    #main
+        form
+            h1
+                | Overview
+            h3
+                | Most and Least Revised Articles
+            table.longtable
+                thead
+                    tr
+                        th
+                            | Most Revisions
+                        th
+                            | Least Revisions
+                tbody
+                    tr
+                        td
+                            ul#topRev
+                        td
+                            ul#botRev
+                table
+                    tr
+                        td
+                            | Show
+                        td
+                            input(type='number' name='quantity' min='1' max='99' value=articleNum)
+                        td
+                            | articles 
+                        td
+                            input(type='button' name = 'topBotRevUpdate' value='Update')
+            h3 Article Histories
+            table.longtable
+                thead
+                    tr
+                        th
+                            | Longest History
+                        th
+                            | Shortest History
+                tbody
+                    tr
+                        td
+                            ul#oldestArticles
+                        td
+                            ul#newestArticles
+            h3 Articles Editted By Registered Users
+            table.longtable
+                thead
+                    tr
+                        th
+                            | Most Users
+                        th
+                            | Least Users
+                tbody
+                    tr
+                        td
+                            ul#mostUsers
+                        td
+                            ul#leastUsers
+            h3
+                | Graphs
+            div#myChart
+            table
+                tr
+                    td
+                        | The number of revisions from different user types
+                    td
+                        select(name="chartSelector")
+                            option(value="Over Time")
+                                | Over Time
+                            option(value="In Total")
+                                | In Total
+                    td
+                        input(type='button' name='chartUpdate' value = 'Update')

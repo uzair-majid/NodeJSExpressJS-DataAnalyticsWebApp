@@ -1,0 +1,43 @@
+﻿doctype html
+head
+script(type='text/javascript' src='javascripts/login.js')
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+    
+
+body
+    div#background
+        form.register(method='POST' action='/register' onsubmit='return signupvalidations()')
+                h2 Register
+                label(for='name') Name:
+                input#username.field(type='text', placeholder='enter your user name...' name='uname')
+          
+                label(for='email') Email:
+                input#email-r.control(type='email', placeholder='name@email.com' name='email' )
+          
+                label(for='pw') Password:
+                input#pw-r.control(type='password' name='password' )
+          
+                label(for='pw2') Confirm Password:
+                input#cpw.control(type='password' name='confirmPassword' )
+           
+                button#signup(type='submit' ) SIGN UP 
+            
+            
+        form.login(method='POST' action='/login' onsubmit='return loginvalidations()')
+                h2 Login
+           
+                label(for='email') Email:
+                input#email-l.control(type='email', placeholder='name@email.com' name='email' )
+          
+                label(for='pw') Password:
+                input#pw-l.control(type='password' name='password' )
+                                
+                button#login(type='submit' ) LOGIN 
+
+
+  
+    
+ 
+    
+   
+    

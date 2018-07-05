@@ -1,0 +1,186 @@
+@font-face {
+    font-family: Avenir;
+    src: url('fonts/Avenir.ttc') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: Avenir;
+    background-color: #F3F3F3;
+}
+
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 22em;
+    background-color: #2F576E; /*Dark grey-blue*/
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul {
+    padding: 0;
+}
+li a {
+    display: block;
+    color: white;
+    padding: 24px 24px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+li a.active {
+    background-color: #44687C;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #2A4E62;
+    color: white;
+}
+
+li{
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 3em;
+    color: #CE953F; /*orange color*/
+}
+
+h2 {
+    font-size: 2.3em;
+    color: white;
+    padding: 10px 24px;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #9B9B9B;
+    padding-top: 1em;
+}
+
+h4 {
+    font-size: 1.8em;
+    color: #CE953F;
+}
+
+#main {
+    margin-left: 23em;
+    padding: 1px 45px;
+}
+
+#chart {
+    width: 900px;
+    height: 500px;
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th {
+    width: 14em;
+    padding-bottom: 0.25em;
+}
+
+
+.longtable td{
+
+    width: 14em;
+}
+
+thead {
+    color: #CE953F;
+    font-size: 1.4em;
+}
+
+tbody {
+    color: #4F4F4F;
+    font-weight: 100;
+}
+
+td{
+    padding-top: 0.5em;
+}
+
+form {
+    padding-bottom: 2em;
+    padding-top: 0.5em;
+}
+
+.longtable tr:nth-child(odd) td{
+
+}
+
+img{
+    height: 2.5em;
+    width: 2.5em;
+}
+
+#authorAnalyticsControls{
+    padding-bottom: 1em;
+}
+
+.timestamp {
+    color: #a3a3a3;
+    font-size:0.8em;
+}
+
+.articleEntry:hover{
+    font-weight: 500;
+}
+#articleEntryBox, #authorEntryBox{
+    width: 18.750em;
+    padding: 0.625em 0.625em 0.625em 0.625em;
+}
+#articleSearchButton, #authorSearchButton{
+    background-color: #2F576E; 
+    border: none;
+    color: white;
+    padding: 0.625em 0.625em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+}
+#articleSearchButton:hover{
+    background-color: #CE953F; 
+
+}
+
+#authorSearchButton:hover{
+    background-color: #CE953F; 
+
+}
+#quantityInputBox{
+    width: 1.875em;
+    padding: 0.625em 0.500em 0.625em 0.500em;
+    text-align: center;
+    font-weight: bold;
+    border-color: #CE953F;
+
+}
+input::-webkit-inner-spin-button {
+    opacity: 1;
+}
+#updateButton, #chartSwitcherIndividualArticle{
+    background-color: #CE953F; 
+    border-style: solid;
+    color: white;
+    padding: 0.438em 0.438em;
+    text-align: center;
+    display: inline-block;
+    font-weight: 400;
+    border-color: #CE953F;
+
+}
+#articleList{
+    cursor: pointer;
+}
+
+
+
